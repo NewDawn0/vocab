@@ -62,7 +62,6 @@ int main(int argc, char **argv) {
     parser.addArg("--help", false, true);
     parser.addArg("-s", false);
     parser.addArg("--swap", false);
-    parser.overrideEvent("NoArgsErr", &Help);
     parser.parse(argc, argv);
 
     // scan file and unpack
