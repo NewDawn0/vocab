@@ -1,0 +1,3 @@
+[submodule "src/include/argparser"]
+	path = src/include/argparser
+	url = https://github.com/NewDawn0/argparser.git
