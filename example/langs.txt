@@ -1,0 +1,11 @@
+public | öffentlich
+static | statisch
+void | Leere
+main | hauptsächlich
+string | Schnur
+args | Argumente
+system | System
+out | aus
+print | drucken
+hello | Hallo
+world | Welt
