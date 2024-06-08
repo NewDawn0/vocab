@@ -1,8 +1,8 @@
 # Import modules
 import argparse
-from parser import File
-from util import Lang
-from quiz import Quiz
+from .parser import File
+from .util import Lang
+from .quiz import Quiz
 
 
 def main():

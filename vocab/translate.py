@@ -1,5 +1,5 @@
 from subprocess import run
-from util import Lang, Colour
+from .util import Lang, Colour
 
 
 # Function to translate the text from the source language to the target language

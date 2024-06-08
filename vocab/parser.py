@@ -1,6 +1,6 @@
 from os import path
-from translate import translate
-from util import Lang, Colour, ClearPrint
+from .translate import translate
+from .util import Lang, Colour, ClearPrint
 
 
 class File:

@@ -1,5 +1,5 @@
 from random import shuffle
-from util import Colour
+from .util import Colour
 from difflib import SequenceMatcher
 
 
