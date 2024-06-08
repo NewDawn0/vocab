@@ -13,6 +13,8 @@
   outputs = { self, nixpkgs, ... }@inputs:
     let eachSystem = nixpkgs.lib.genAttrs (import inputs.nix-systems);
     in {
+      overlays.default =
+        (final: prev: { vocab = self.packages.${prev.system}.default; });
       packages = eachSystem (system:
         let
           pkgs = import nixpkgs {
