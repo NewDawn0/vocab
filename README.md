@@ -71,17 +71,15 @@ A cli vocabulary learning tool
 
 ## Usage
 
+```bash
+vocab -f <your vocab file>
+```
+
 ### Basic usage
 
 Use the `-f <path>` or `--file <path>` flags to point to your wordlist.
 
 This is the **only required argument**
-
-````bash
-vocab -f <your vocab file>
-```bash
-vocab -f <your vocab file>
-````
 
 ### Flags
 
