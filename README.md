@@ -54,8 +54,10 @@ A cli vocabulary learning tool
 
 ### From source
 
-1. Install [Rust](https://www.rust-lang.org) using [rustup](https://rustup.rs)
-2. Install [tl](https://github.com/NewDawn0/tl) using the below command:
+1. Install the following dependencies:
+   - [Python](https://www.python.org/downloads/)
+   - Rust using [rustup](https://rustup.rs)
+   - [tl](https://github.com/NewDawn0/tl) using the below command:
    ```bash
    cargo install --git https://github.com/NewDawn0/tl
    ```
