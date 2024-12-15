@@ -26,10 +26,23 @@
           };
         in {
           default = pkgs.python3Packages.buildPythonPackage {
-            name = "vocab";
-            propagatedBuildInputs = with pkgs; [ tl ];
-            src = ./.;
+            pname = "vocab";
+            version = "1.0.0";
+            propagagedBuildInputs = with pkgs; [ tl ];
             buildInputs = with pkgs.python3Packages; [ setuptools ];
+            src = ./.;
+            meta = {
+              description =
+                "An efficient CLI-based tool for vocabulary learning";
+              longDescription = ''
+                This command-line tool helps you learn and memorize vocabulary efficiently.
+                It provides a simple way to learn vocabulary from a file, with autocorrection and automatic translation.
+              '';
+              homepage = "https://github.com/NewDawn0/vocab";
+              license = pkgs.lib.licenses.mit;
+              maintainers = with pkgs.lib.maintainers; [ NewDawn0 ];
+              platforms = pkgs.lib.platforms.all;
+            };
           };
         });
     };
