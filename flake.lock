@@ -17,81 +17,40 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1734296332,
-        "narHash": "sha256-IRfMbUjze8MYAcK9whuOSRuRv+8Gnr+9o9CBRaplG2Q=",
+        "lastModified": 1737253822,
+        "narHash": "sha256-yU7hu+fIUJa+YwPt7Y2rl2R+CuSIwxDESJqqccCEHz0=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "9f4fa04169fa2d2a569e424bc6d918bc1349328f",
+        "rev": "a8815cdd42062c104459947067bd4a92c3ecbbd8",
         "type": "github"
       },
       "original": {
         "owner": "nixos",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs_2": {
-      "locked": {
-        "lastModified": 1728538411,
-        "narHash": "sha256-f0SBJz1eZ2yOuKUr5CA9BHULGXVSn6miBuUWdTyhUhU=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "b69de56fac8c2b6f8fd27f2eca01dcda8e0a4221",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "ref": "nixpkgs-unstable",
         "repo": "nixpkgs",
         "type": "github"
       }
     },
     "root": {
       "inputs": {
+        "utils": "utils"
+      }
+    },
+    "utils": {
+      "inputs": {
         "nix-systems": "nix-systems",
-        "nixpkgs": "nixpkgs",
-        "tl": "tl"
-      }
-    },
-    "rust-overlay": {
-      "inputs": {
-        "nixpkgs": "nixpkgs_2"
+        "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1734230139,
-        "narHash": "sha256-zsp0Mz8VgyIAnU8UhP/YT1g+zlsl+NIJTBMAbY+RifQ=",
-        "owner": "oxalica",
-        "repo": "rust-overlay",
-        "rev": "150fbc8aa2bc501041810bbc1dbfe73694a861be",
-        "type": "github"
-      },
-      "original": {
-        "owner": "oxalica",
-        "repo": "rust-overlay",
-        "type": "github"
-      }
-    },
-    "tl": {
-      "inputs": {
-        "nix-systems": [
-          "nix-systems"
-        ],
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "rust-overlay": "rust-overlay"
-      },
-      "locked": {
-        "lastModified": 1734295972,
-        "narHash": "sha256-6oKz68UIRLRB7l5Am9+GNHswJKIrV/31dhkLRPC6dhE=",
+        "lastModified": 1737848169,
+        "narHash": "sha256-r0grvjFeqPO9n3JvoVfFCP4EndfyYm9uY3tFeVzAu7Q=",
         "owner": "NewDawn0",
-        "repo": "tl",
-        "rev": "1239d76001584443fd1d4f87ff3313a38263fcdd",
+        "repo": "nixUtils",
+        "rev": "28fd3a18f6b771ec0ce73acfa6008a9faf4e92f5",
         "type": "github"
       },
       "original": {
         "owner": "NewDawn0",
-        "repo": "tl",
+        "repo": "nixUtils",
         "type": "github"
       }
     }
