@@ -14,7 +14,7 @@ A cli vocabulary learning tool
     * [Flags](#flags)
         * [File path](#file-path)
         * [Swapping answers and questions](#swapping-answers-and-questions)
-        * [Setting the seperator](#setting-the-seperator)
+        * [Setting the separator](#setting-the-separator)
         * [Automatic translation](#automatic-translation)
     * [Defining vocab files](#defining-vocab-files)
 
@@ -59,14 +59,14 @@ A cli vocabulary learning tool
    - Rust using [rustup](https://rustup.rs)
    - [tl](https://github.com/NewDawn0/tl) using the below command:
    ```bash
-   cargo install --git https://github.com/NewDawn0/tl
+   cargo install --git https://github.com/NewDawn0/translate
    ```
-3. Clone the repo:
+2. Clone the repo:
    ```bash
    git clone --depth 1 https://github.com/NewDawn0/vocab
    cd vocab
    ```
-4. Install vocab using pip:
+3. Install vocab using pip:
    ```bash
    pip install .
    ```
@@ -95,9 +95,9 @@ Use the `-f <path>` or `--file <path>` flags to point to your wordlist.
 
 To swap answers and questions meaning for a given answer you have to provide the question, use the `--switch` flag
 
-#### Setting the seperator
+#### Setting the separator
 
-Use `-s <seperator string>` | `--seperator <string>` to set the seperator string
+Use `-s <separator string>` | `--separator <string>` to set the separator string
 
 - This argument is useless when vocab is in translation mode
 
@@ -109,7 +109,7 @@ Use the `-t <source lang> <target lang>` or `--translate <source lang> <target l
 
 ### Defining vocab files
 
-A vocab file is a list of questions and answers seperated by a seperator string
+A vocab file is a list of questions and answers separated by a separator string
 In the `examples` directory you'll find example word lists/vocab files
-The default seperator is a pipe `|` symbol however this can easily be changed by setting the seperator using `-s <seperator string>` or `--seperator <seperator string>`
-Writing anwers can be omitted by letting the program automatically translate them using the `-t <source lang> <target lang>` or `--translate <source lang> <target lang>` flags which enable translation using [Google translate](https://translate.google.com)
+The default separator is a pipe `|` symbol however this can easily be changed by setting the separator using `-s <separator string>` or `--separator <separator string>`
+Writing answers can be omitted by letting the program automatically translate them using the `-t <source lang> <target lang>` or `--translate <source lang> <target lang>` flags which enable translation using [Google translate](https://translate.google.com)

@@ -1,7 +1,7 @@
 from os import path
-from .translate import translate
-from .util import Lang, Colour, ClearPrint
 
+from .translate import translate
+from .util import ClearPrint, Colour, Lang
 
 class File:
     def __init__(
@@ -48,15 +48,15 @@ class File:
                 # Skip empty lines
                 if not stripped:
                     continue
-                # Check amount of seperators
+                # Check amount of separators
                 parts = stripped.split(self.sep)
                 if len(parts) > amount_of_seps + 1:
                     errors.append(
-                        f"line: {idx+1} => Line has more than {amount_of_seps} seperator(s) `{self.sep}`"
+                        f"line: {idx+1} => Line has more than {amount_of_seps} separator(s) `{self.sep}`"
                     )
                 if len(parts) < amount_of_seps + 1:
                     errors.append(
-                        f"line: {idx+1} => Line has less than {amount_of_seps} seperator(s) `{self.sep}`"
+                        f"line: {idx+1} => Line has less than {amount_of_seps} separator(s) `{self.sep}`"
                     )
 
         if len(errors) == 0:

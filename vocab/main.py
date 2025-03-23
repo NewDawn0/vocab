@@ -1,9 +1,9 @@
 # Import modules
 import argparse
-from .parser import File
-from .util import Lang
-from .quiz import Quiz
 
+from .parser import File
+from .quiz import Quiz
+from .util import Lang
 
 def main():
     # Define cli args
@@ -11,8 +11,8 @@ def main():
     parser.add_argument("-f", "--file", help="Filepath to wordlist", required=True)
     parser.add_argument(
         "-s",
-        "--seperator",
-        help="Seperator between question and answer (default '|')",
+        "--separator",
+        help="separator between question and answer (default '|')",
         default="|",
     )
     parser.add_argument(
@@ -41,13 +41,12 @@ def main():
         # Create a file from the path and export the keys and answers from keys
         *File(
             args.file,
-            args.seperator,
+            args.separator,
             translation_enabled,
             Lang(*translation_defaults),
             args.switch,
         ).export(),
     ).run()
-
 
 # Run main
 if __name__ == "__main__":
